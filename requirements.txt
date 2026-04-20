@@ -1,0 +1,6 @@
+numpy
+opencv-python
+pycryptodome
+pywavelets
+flask
+requests

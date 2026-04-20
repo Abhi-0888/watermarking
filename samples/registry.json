@@ -1,0 +1,8 @@
+{
+  "DOC-2026-001": {
+    "issuer_id": "CollegeXYZ",
+    "receiver_identity": "Abhishek",
+    "protected_hash": "3db5ccfb608dc65613f09b8d07eb8eea9e5ae9f482ef64aebaeeababb449af77",
+    "timestamp": "2026-04-10 22:32:46"
+  }
+}
