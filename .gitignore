@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+env/
+
+# Generated sample outputs (recreated by main.py / transfer.py)
+samples/encrypted.bin
+samples/decrypted.png
+samples/watermarked.png
+samples/watermarked_v*.png
+samples/manifest.json
+samples/manifest_v*.json
+samples/registry.json
+samples/provenance.json
+samples/attacks/
+samples/keys/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Archives / temp / converted sources
+temp_zip_extract/
+*.zip
+*.docx

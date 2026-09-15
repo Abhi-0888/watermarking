@@ -11,8 +11,10 @@ def parse_watermark_text(watermark_text):
             value = value.strip()
             alias_map = {
                 "ISS": "Issuer",
+                "SRC": "Sender",
                 "RCV": "Receiver",
                 "DOC": "DocID",
+                "VER": "Version",
                 "TS": "Time",
             }
             parts[alias_map.get(key, key)] = value

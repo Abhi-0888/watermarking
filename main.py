@@ -7,7 +7,8 @@ import os
 import cv2
 
 from encryption.aes import decrypt_file, encrypt_file, generate_key
-from encryption.rsa import decrypt_key, encrypt_key, generate_keys
+from encryption.rsa import decrypt_key, encrypt_key, generate_keys, save_keys
+from provenance.chain import init_document as init_provenance
 from utils.forensics import generate_forensic_report
 from utils.metrics import (
     measure_embedding_capacity,
@@ -19,6 +20,7 @@ from utils.metrics import (
 )
 from verification.attacks import create_attack_set
 from verification.package import build_manifest, update_registry, write_manifest
+from verification.tamper_localization import attach_block_descriptors
 from verification.verify import verify_document
 from watermark.embed import embed_watermark
 from watermark.extract import extract_watermark_details
@@ -32,11 +34,19 @@ DECRYPTED_FILE = SAMPLES_DIR / "decrypted.png"
 PROTECTED_FILE = SAMPLES_DIR / "watermarked.png"
 MANIFEST_FILE = SAMPLES_DIR / "manifest.json"
 REGISTRY_FILE = SAMPLES_DIR / "registry.json"
+PROVENANCE_FILE = SAMPLES_DIR / "provenance.json"
+KEY_DIR = SAMPLES_DIR / "keys"
 ATTACK_DIR = SAMPLES_DIR / "attacks"
 
 
-def create_watermark_text(issuer_id, receiver_identity, document_id, timestamp):
-    return f"ISS:{issuer_id}|RCV:{receiver_identity}|DOC:{document_id}|TS:{timestamp}"
+def create_watermark_text(issuer_id, sender_identity, receiver_identity, document_id, version, timestamp):
+    # ISS = original issuer, SRC = current sender/holder handing the copy
+    # onward, RCV = receiver of this specific copy, VER = copy/version
+    # number (bumped on every authorized transfer).
+    return (
+        f"ISS:{issuer_id}|SRC:{sender_identity}|RCV:{receiver_identity}|"
+        f"DOC:{document_id}|VER:{version}|TS:{timestamp}"
+    )
 
 
 def evaluate_attack_file(attack_name, attack_file, expected_shape, watermark_text=None, thumbnail_b64=None):
@@ -119,13 +129,18 @@ def protect_document(run_full_evaluation=False, present_mode=False):
     issuer_id = "CollegeXYZ"
     receiver_identity = "Abhishek"
     document_id = "DOC-2026-001"
+    version = 1
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    watermark_text = create_watermark_text(issuer_id, receiver_identity, document_id, timestamp)
+    # At issuance the issuer is also the "current sender" of copy v1.
+    watermark_text = create_watermark_text(
+        issuer_id, issuer_id, receiver_identity, document_id, version, timestamp
+    )
 
     print("\nSECURE DOCUMENT SYSTEM STARTING\n")
     print("Phase 1: Hybrid encryption")
     aes_key = generate_key()
     private_key, public_key = generate_keys()
+    save_keys(private_key, public_key, str(KEY_DIR))
     encrypted_aes_key = encrypt_key(aes_key, public_key)
     decrypted_aes_key = decrypt_key(encrypted_aes_key, private_key)
 
@@ -153,10 +168,24 @@ def protect_document(run_full_evaluation=False, present_mode=False):
         encrypted_aes_key=encrypted_aes_key,
         image_shape=cv2.imread(str(DECRYPTED_FILE), cv2.IMREAD_GRAYSCALE).shape,
     )
+    manifest["sender_identity"] = issuer_id
+    manifest["version"] = version
+    attach_block_descriptors(manifest, str(PROTECTED_FILE))
     write_manifest(str(MANIFEST_FILE), manifest)
     update_registry(str(REGISTRY_FILE), manifest)
+    init_provenance(
+        str(PROVENANCE_FILE),
+        document_id=document_id,
+        issuer_id=issuer_id,
+        initial_holder=receiver_identity,
+        protected_hash=manifest["protected_hash"],
+        version=version,
+        timestamp=timestamp,
+    )
     print(f"  Manifest written to {MANIFEST_FILE}")
     print(f"  Online registry updated at {REGISTRY_FILE}")
+    print(f"  Provenance chain initialized at {PROVENANCE_FILE}")
+    print(f"  Issuer keypair stored at {KEY_DIR}")
 
     print("\nPhase 4: Verification")
     offline_report = verify_document(str(PROTECTED_FILE), str(MANIFEST_FILE), mode="offline")
@@ -259,12 +288,19 @@ def main():
         help="Verification mode",
     )
     parser.add_argument("--registry", dest="registry_path", help="Registry file for online verification")
+    parser.add_argument("--provenance", dest="provenance_path", help="Provenance/traversal chain file")
     args = parser.parse_args()
 
     if args.command == "verify":
         if not args.file_path or not args.manifest_path:
             raise SystemExit("verify requires --file and --manifest")
-        verify_document(args.file_path, args.manifest_path, mode=args.mode, registry_path=args.registry_path)
+        verify_document(
+            args.file_path,
+            args.manifest_path,
+            mode=args.mode,
+            registry_path=args.registry_path,
+            provenance_path=args.provenance_path or str(PROVENANCE_FILE),
+        )
         return
 
     protect_document(

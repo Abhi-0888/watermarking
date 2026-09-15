@@ -25,7 +25,10 @@ def update_registry(registry_path, manifest_data):
     registry[manifest_data["document_id"]] = {
         "issuer_id": manifest_data["issuer_id"],
         "receiver_identity": manifest_data["receiver_identity"],
+        "current_holder": manifest_data.get("receiver_identity"),
         "protected_hash": manifest_data["protected_hash"],
+        "version": manifest_data.get("version", 1),
+        "transfer_count": manifest_data.get("version", 1),
         "timestamp": manifest_data["timestamp"],
     }
 

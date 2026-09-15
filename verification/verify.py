@@ -4,8 +4,10 @@ from pathlib import Path
 
 from Crypto.PublicKey import RSA
 
+from provenance.chain import get_document as get_provenance, traversal_path, verify_chain_integrity
 from utils.forensics import parse_watermark_text
 from utils.hash import generate_hash, signature_from_text, verify_signature
+from verification.tamper_localization import localize_tamper
 from watermark.extract import extract_watermark_details
 
 
@@ -14,7 +16,7 @@ def _load_json(path):
         return json.load(file_handle)
 
 
-def verify_document(file_path, manifest_path, mode="offline", registry_path=None):
+def verify_document(file_path, manifest_path, mode="offline", registry_path=None, provenance_path=None):
     manifest = _load_json(manifest_path)
     public_key = RSA.import_key(manifest["public_key_pem"])
     signature = signature_from_text(manifest["signature_b64"])
@@ -45,6 +47,19 @@ def verify_document(file_path, manifest_path, mode="offline", registry_path=None
                 and entry.get("issuer_id") == manifest["issuer_id"]
             )
 
+    # Block-level tamper localization (works off the manifest's baseline
+    # block fingerprints, independent of hash/signature/watermark checks).
+    tamper_report = localize_tamper(file_path, manifest)
+
+    # Provenance / traversal lookup (optional — only if a provenance file
+    # was supplied, e.g. by the Raspberry Pi terminal or a verify --provenance flag).
+    provenance_entry = None
+    provenance_chain_ok = None
+    if provenance_path and Path(provenance_path).exists():
+        provenance_entry = get_provenance(provenance_path, manifest["document_id"])
+        if provenance_entry:
+            provenance_chain_ok = verify_chain_integrity(provenance_path, manifest["document_id"])["valid"]
+
     issues = []
     if not hash_ok:
         issues.append("Protected hash mismatch")
@@ -54,8 +69,22 @@ def verify_document(file_path, manifest_path, mode="offline", registry_path=None
         issues.append("Watermark missing or altered")
     if mode == "online" and not registry_ok:
         issues.append("Online registry lookup failed")
+    if tamper_report.get("supported") and tamper_report.get("tampered"):
+        issues.append(
+            f"Tamper localized in {len(tamper_report['blocks'])} block(s): "
+            + ", ".join(tamper_report["block_labels"][:10])
+        )
+    if provenance_chain_ok is False:
+        issues.append("Provenance chain integrity check failed")
 
-    authentic = hash_ok and signature_ok and watermark_ok and (registry_ok is not False)
+    authentic = (
+        hash_ok
+        and signature_ok
+        and watermark_ok
+        and (registry_ok is not False)
+        and not (tamper_report.get("supported") and tamper_report.get("tampered"))
+        and (provenance_chain_ok is not False)
+    )
     report = {
         "mode": mode,
         "checked_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -66,8 +95,15 @@ def verify_document(file_path, manifest_path, mode="offline", registry_path=None
         "watermark_valid": watermark_ok,
         "watermark_text": extracted_text,
         "watermark_confidence": watermark_details.get("confidence", 0.0),
+        "issuer_identity": watermark_fields.get("Issuer"),
+        "sender_identity": watermark_fields.get("Sender"),
         "receiver_identity": watermark_fields.get("Receiver") or watermark_fields.get("User"),
+        "version": watermark_fields.get("Version"),
         "registry_valid": registry_ok,
+        "tamper_localization": tamper_report,
+        "provenance": provenance_entry,
+        "provenance_chain_valid": provenance_chain_ok,
+        "traversal_path": traversal_path(provenance_path, manifest["document_id"]) if provenance_entry else [],
         "authentic": authentic,
         "issues": issues,
     }
@@ -83,8 +119,16 @@ def verify_document(file_path, manifest_path, mode="offline", registry_path=None
     print(f"Watermark Check   : {'PASS' if watermark_ok else 'FAIL'}")
     print(f"Watermark Text    : {extracted_text or 'Not recovered'}")
     print(f"Watermark Score   : {report['watermark_confidence']}")
+    print(f"Current Holder    : {report['receiver_identity'] or 'Unknown'}")
+    print(f"Copy Version      : {report['version'] or 'Unknown'}")
     if mode == "online":
         print(f"Registry Check    : {'PASS' if registry_ok else 'FAIL'}")
+    if tamper_report.get("supported"):
+        loc = "None" if not tamper_report["tampered"] else ", ".join(tamper_report["block_labels"][:10])
+        print(f"Tamper Localization: {loc} ({tamper_report['percent_tampered']}% of blocks)")
+    if provenance_entry is not None:
+        print(f"Provenance Chain  : {'VALID' if provenance_chain_ok else 'BROKEN'}")
+        print(f"Traversal Path    : {' -> '.join(report['traversal_path'])}")
     print(f"Verdict           : {'AUTHENTIC' if authentic else 'SUSPICIOUS / TAMPERED'}")
     if issues:
         print("Issues            : " + "; ".join(issues))
