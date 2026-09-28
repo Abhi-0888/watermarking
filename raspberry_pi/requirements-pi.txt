@@ -1,1 +1,12 @@
+# Pi-specific requirements.
+# Use install_gpio.sh to pick the right GPIO package automatically:
+#   bash raspberry_pi/install_gpio.sh
+#
+# Pi 3 / 4 / Zero 2 W:
 RPi.GPIO
+#
+# Pi 5 (uncomment if not using install_gpio.sh):
+# rpi-lgpio
+#
+# For benchmark.py:
+psutil

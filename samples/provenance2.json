@@ -1,0 +1,41 @@
+{
+  "DOC-2026-002": {
+    "document_id": "DOC-2026-002",
+    "original_issuer": "CollegeXYZ",
+    "current_holder": "Priya",
+    "transfer_count": 3,
+    "current_version": 3,
+    "history": [
+      {
+        "seq": 1,
+        "from": "CollegeXYZ",
+        "to": "Abhishek",
+        "version": 1,
+        "protected_hash": "11a2492cd653346b326f3873b6e8679799009cf947f5d6d000145ecc79fd7637",
+        "timestamp": "2026-09-28 16:33:26",
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "record_hash": "ebb772b7981f1348e80fa1e6bed9b8bec52bfe459d41a47abf5f20a7f3db3949"
+      },
+      {
+        "seq": 2,
+        "from": "Abhishek",
+        "to": "Rahul",
+        "version": 2,
+        "protected_hash": "b53c200b9e33599f8c90be4ceab08d4cfde26359f86c1a7388e28f6808131bd6",
+        "timestamp": "2026-09-28 16:33:27",
+        "prev_hash": "ebb772b7981f1348e80fa1e6bed9b8bec52bfe459d41a47abf5f20a7f3db3949",
+        "record_hash": "4101e456e9a0ad4720d797730450f94dcef5f0848a05b7289754d4b0530f6279"
+      },
+      {
+        "seq": 3,
+        "from": "Rahul",
+        "to": "Priya",
+        "version": 3,
+        "protected_hash": "a5d56cbb99781ba0820d62be807a6d2fe409f143f40baca472e2f70a017678f6",
+        "timestamp": "2026-09-28 16:33:28",
+        "prev_hash": "4101e456e9a0ad4720d797730450f94dcef5f0848a05b7289754d4b0530f6279",
+        "record_hash": "6dc7eef1c98db1319b728a09dc02ff56d0ee4ad64149cd887c594b112857263b"
+      }
+    ]
+  }
+}

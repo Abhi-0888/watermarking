@@ -1,0 +1,11 @@
+{
+  "DOC-2026-002": {
+    "issuer_id": "CollegeXYZ",
+    "receiver_identity": "Priya",
+    "current_holder": "Priya",
+    "protected_hash": "a5d56cbb99781ba0820d62be807a6d2fe409f143f40baca472e2f70a017678f6",
+    "version": 3,
+    "transfer_count": 3,
+    "timestamp": "2026-09-28 16:33:28"
+  }
+}

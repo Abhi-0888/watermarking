@@ -1,0 +1,293 @@
+  ✓  Skipping issue/transfer stages (files already present).
+
+══════════════════════════════════════════════════════════════
+  STAGE 4 — Pi terminal: verify AUTHENTIC copy
+══════════════════════════════════════════════════════════════
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\watermarked.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:19:36
+Hash Check        : PASS
+Signature Check   : PASS
+Watermark Check   : PASS
+Watermark Text    : ISS:CollegeXYZ|SRC:CollegeXYZ|RCV:Abhishek|DOC:DOC-2026-001|VER:1|TS:2026-09-28 16:09:15
+Watermark Score   : 0.991
+Current Holder    : Abhishek
+Copy Version      : 1
+Registry Check    : PASS
+Tamper Localization: None (0.0% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : AUTHENTIC
+==========================================================
+
+══════════════════════════════════════════════════
+SECURE DOCUMENT MONITOR
+──────────────────────────────────────────────────
+DOCUMENT ID       : DOC-2026-001
+STATUS            : AUTHENTIC
+CURRENT HOLDER    : Abhishek
+COPY VERSION      : 1
+TRANSFER COUNT    : 3
+HASH CHECK        : PASS
+SIGNATURE         : PASS
+WATERMARK         : VALID
+TAMPER            : NONE DETECTED
+──────────────────────────────────────────────────
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+──────────────────────────────────────────────────
+══════════════════════════════════════════════════
+[pi-terminal] Verdict           : AUTHENTIC
+[pi-terminal] Verification time : 270.4 ms
+
+  ✓  Verdict           : AUTHENTIC ✓
+  ✓  Traversal path    : CollegeXYZ → Abhishek → Rahul → Priya
+  ✓  Provenance chain  : VALID
+  ✓  Traversal path matches expected ✓
+
+══════════════════════════════════════════════════════════════
+  STAGE 5 — Tamper / attack variants
+══════════════════════════════════════════════════════════════
+
+  ▶  Creating tampered variants …
+  ✓  tampered_patch.png  — 60×60 grey patch at centre
+  ✓  tampered_text.png   — 'COPY UNVERIFIED' text overlay
+  ✓  tampered_jpeg.png   — JPEG quality=50 round-trip (redistribution)
+  ✓  tampered_crop.png   — 32px crop each side → 548×548
+
+══════════════════════════════════════════════════════════════
+  STAGE 5 — Verifying: tampered_patch
+══════════════════════════════════════════════════════════════
+  Note: deliberate edit → expect TAMPERED
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_patch.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:19:36
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : PASS
+Watermark Text    : ISS:CollegeXYZ|SRC:CollegeXYZ|RCV:Abhishek|DOC:DOC-2026-001|VER:1|TS:2026-09-28 16:09:15
+Watermark Score   : 0.986
+Current Holder    : Abhishek
+Copy Version      : 1
+Registry Check    : PASS
+Tamper Localization: B16-17, B16-18, B16-19, B16-20, B17-17, B17-18, B17-19, B17-20, B18-17, B18-18 (1.39% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Tamper localized in 20 block(s): B16-17, B16-18, B16-19, B16-20, B17-17, B17-18, B17-19, B17-20, B18-17, B18-18
+==========================================================
+
+══════════════════════════════════════════════════
+SECURE DOCUMENT MONITOR
+──────────────────────────────────────────────────
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Abhishek
+COPY VERSION      : 1
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : VALID
+TAMPER            : B16-17, B16-18, B16-19, B16-20, B17-17, B17-18
+──────────────────────────────────────────────────
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+──────────────────────────────────────────────────
+══════════════════════════════════════════════════
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 281.1 ms
+
+  🔴 LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : B16-17, B16-18, B16-19, B16-20, B17-17, B17-18
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Tamper localized in 20 block(s): B16-17, B16-18, B16-19, B16-20, B17-17, B17-18, B17-19, B17-20, B18-17, B18-18
+
+══════════════════════════════════════════════════════════════
+  STAGE 5 — Verifying: tampered_text
+══════════════════════════════════════════════════════════════
+  Note: deliberate edit → expect TAMPERED
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_text.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:19:37
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : PASS
+Watermark Text    : ISS:CollegeXYZ|SRC:CollegeXYZ|RCV:Abhishek|DOC:DOC-2026-001|VER:1|TS:2026-09-28 16:09:15
+Watermark Score   : 0.9895
+Current Holder    : Abhishek
+Copy Version      : 1
+Registry Check    : PASS
+Tamper Localization: B10-10, B10-12, B10-13, B10-14, B10-15, B10-16, B11-9, B11-10, B11-11, B11-12 (3.19% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Tamper localized in 46 block(s): B10-10, B10-12, B10-13, B10-14, B10-15, B10-16, B11-9, B11-10, B11-11, B11-12
+==========================================================
+
+══════════════════════════════════════════════════
+SECURE DOCUMENT MONITOR
+──────────────────────────────────────────────────
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Abhishek
+COPY VERSION      : 1
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : VALID
+TAMPER            : B10-10, B10-12, B10-13, B10-14, B10-15, B10-16
+──────────────────────────────────────────────────
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+──────────────────────────────────────────────────
+══════════════════════════════════════════════════
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 282.3 ms
+
+  🔴 LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : B10-10, B10-12, B10-13, B10-14, B10-15, B10-16
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Tamper localized in 46 block(s): B10-10, B10-12, B10-13, B10-14, B10-15, B10-16, B11-9, B11-10, B11-11, B11-12
+
+══════════════════════════════════════════════════════════════
+  STAGE 5 — Verifying: tampered_jpeg
+══════════════════════════════════════════════════════════════
+  Note: redistribution → honest: may PASS
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_jpeg.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:19:44
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : FAIL
+Watermark Text    : Not recovered
+Watermark Score   : 0.0
+Current Holder    : Unknown
+Copy Version      : Unknown
+Registry Check    : PASS
+Tamper Localization: B0-0, B0-2, B0-4, B0-6, B0-7, B0-8, B0-9, B0-12, B0-13, B0-15 (53.74% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Watermark missing or altered; Tamper localized in 776 block(s): B0-0, B0-2, B0-4, B0-6, B0-7, B0-8, B0-9, B0-12, B0-13, B0-15
+==========================================================
+
+══════════════════════════════════════════════════
+SECURE DOCUMENT MONITOR
+──────────────────────────────────────────────────
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Unknown
+COPY VERSION      : Unknown
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : INVALID
+TAMPER            : B0-0, B0-2, B0-4, B0-6, B0-7, B0-8
+──────────────────────────────────────────────────
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+──────────────────────────────────────────────────
+══════════════════════════════════════════════════
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 7206.6 ms
+
+  🔴 LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : B0-0, B0-2, B0-4, B0-6, B0-7, B0-8
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Watermark missing or altered
+     Issue         : Tamper localized in 776 block(s): B0-0, B0-2, B0-4, B0-6, B0-7, B0-8, B0-9, B0-12, B0-13, B0-15
+
+══════════════════════════════════════════════════════════════
+  STAGE 5 — Verifying: tampered_crop
+══════════════════════════════════════════════════════════════
+  Note: redistribution → honest: geometry mismatch
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_crop.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:20:12
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : FAIL
+Watermark Text    : Not recovered
+Watermark Score   : 0.0
+Current Holder    : Unknown
+Copy Version      : Unknown
+Registry Check    : PASS
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Watermark missing or altered
+==========================================================
+
+══════════════════════════════════════════════════
+SECURE DOCUMENT MONITOR
+──────────────────────────────────────────────────
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Unknown
+COPY VERSION      : Unknown
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : INVALID
+TAMPER            : NONE DETECTED
+──────────────────────────────────────────────────
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+──────────────────────────────────────────────────
+══════════════════════════════════════════════════
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 27462.8 ms
+
+  🔴 LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : N/A
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Watermark missing or altered
+
+══════════════════════════════════════════════════════════════
+  DEMO COMPLETE — Summary
+══════════════════════════════════════════════════════════════
+  Variant              Verdict      LED                           
+  ──────────────────────────────────────────────────────────────────────
+  authentic copy       AUTHENTIC    GREEN ✓
+  tampered_patch       SUSPICIOUS / TAMPERED RED  |  blocks: B16-17, B16-18, B16-19, B16-20, B17-17, B17-18
+  tampered_text        SUSPICIOUS / TAMPERED RED  |  blocks: B10-10, B10-12, B10-13, B10-14, B10-15, B10-16
+  tampered_jpeg        SUSPICIOUS / TAMPERED RED  |  blocks: B0-0, B0-2, B0-4, B0-6, B0-7, B0-8
+  tampered_crop        SUSPICIOUS / TAMPERED RED  |  blocks: geometry mismatch
+  ──────────────────────────────────────────────────────────────────────
+
+  Expected behaviour:
+    tampered_patch  → RED  (painted patch — deliberate localised edit)
+    tampered_text   → RED  (text overlay   — deliberate localised edit)
+    tampered_jpeg   → may be GREEN or RED  (redistribution, not edit)
+    tampered_crop   → RED  (geometry change — hash + sig both fail)
+
+  Photograph for report:
+    • Green LED lit during authentic-copy verification
+    • Red LED lit during tampered_patch or tampered_text verification
+    • Terminal output showing traversal path for the authentic copy
+    • Terminal output showing tamper block labels for patch/text variants
+

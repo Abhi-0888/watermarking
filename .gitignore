@@ -25,6 +25,10 @@ samples/keys/
 Thumbs.db
 .DS_Store
 
+# Benchmark results and tamper test outputs (generated at runtime)
+results/*.csv
+samples/tampered/
+
 # Archives / temp / converted sources
 temp_zip_extract/
 *.zip

@@ -1,0 +1,293 @@
+  Γ£ô  Skipping issue/transfer stages (files already present).
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  STAGE 4 ΓÇö Pi terminal: verify AUTHENTIC copy
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\watermarked.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:13:57
+Hash Check        : PASS
+Signature Check   : PASS
+Watermark Check   : PASS
+Watermark Text    : ISS:CollegeXYZ|SRC:CollegeXYZ|RCV:Abhishek|DOC:DOC-2026-001|VER:1|TS:2026-09-28 16:09:15
+Watermark Score   : 0.991
+Current Holder    : Abhishek
+Copy Version      : 1
+Registry Check    : PASS
+Tamper Localization: None (0.0% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : AUTHENTIC
+==========================================================
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+SECURE DOCUMENT MONITOR
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+DOCUMENT ID       : DOC-2026-001
+STATUS            : AUTHENTIC
+CURRENT HOLDER    : Abhishek
+COPY VERSION      : 1
+TRANSFER COUNT    : 3
+HASH CHECK        : PASS
+SIGNATURE         : PASS
+WATERMARK         : VALID
+TAMPER            : NONE DETECTED
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[pi-terminal] Verdict           : AUTHENTIC
+[pi-terminal] Verification time : 284.2 ms
+
+  Γ£ô  Verdict           : AUTHENTIC Γ£ô
+  Γ£ô  Traversal path    : CollegeXYZ ΓåÆ Abhishek ΓåÆ Rahul ΓåÆ Priya
+  Γ£ô  Provenance chain  : VALID
+  Γ£ô  Traversal path matches expected Γ£ô
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  STAGE 5 ΓÇö Tamper / attack variants
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+
+  Γû╢  Creating tampered variants ΓÇª
+  Γ£ô  tampered_patch.png  ΓÇö 60├ù60 grey patch at centre
+  Γ£ô  tampered_text.png   ΓÇö 'COPY UNVERIFIED' text overlay
+  Γ£ô  tampered_jpeg.png   ΓÇö JPEG quality=50 round-trip (redistribution)
+  Γ£ô  tampered_crop.png   ΓÇö 32px crop each side ΓåÆ 548├ù548
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  STAGE 5 ΓÇö Verifying: tampered_patch
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Note: deliberate edit ΓåÆ expect TAMPERED
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_patch.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:13:58
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : PASS
+Watermark Text    : ISS:CollegeXYZ|SRC:CollegeXYZ|RCV:Abhishek|DOC:DOC-2026-001|VER:1|TS:2026-09-28 16:09:15
+Watermark Score   : 0.986
+Current Holder    : Abhishek
+Copy Version      : 1
+Registry Check    : PASS
+Tamper Localization: B16-17, B16-18, B16-19, B16-20, B17-17, B17-18, B17-19, B17-20, B18-17, B18-18 (1.39% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Tamper localized in 20 block(s): B16-17, B16-18, B16-19, B16-20, B17-17, B17-18, B17-19, B17-20, B18-17, B18-18
+==========================================================
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+SECURE DOCUMENT MONITOR
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Abhishek
+COPY VERSION      : 1
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : VALID
+TAMPER            : B16-17, B16-18, B16-19, B16-20, B17-17, B17-18
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 280.4 ms
+
+  ≡ƒö┤ LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : B16-17, B16-18, B16-19, B16-20, B17-17, B17-18
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Tamper localized in 20 block(s): B16-17, B16-18, B16-19, B16-20, B17-17, B17-18, B17-19, B17-20, B18-17, B18-18
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  STAGE 5 ΓÇö Verifying: tampered_text
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Note: deliberate edit ΓåÆ expect TAMPERED
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_text.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:13:58
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : PASS
+Watermark Text    : ISS:CollegeXYZ|SRC:CollegeXYZ|RCV:Abhishek|DOC:DOC-2026-001|VER:1|TS:2026-09-28 16:09:15
+Watermark Score   : 0.9895
+Current Holder    : Abhishek
+Copy Version      : 1
+Registry Check    : PASS
+Tamper Localization: B10-10, B10-12, B10-13, B10-14, B10-15, B10-16, B11-9, B11-10, B11-11, B11-12 (3.19% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Tamper localized in 46 block(s): B10-10, B10-12, B10-13, B10-14, B10-15, B10-16, B11-9, B11-10, B11-11, B11-12
+==========================================================
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+SECURE DOCUMENT MONITOR
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Abhishek
+COPY VERSION      : 1
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : VALID
+TAMPER            : B10-10, B10-12, B10-13, B10-14, B10-15, B10-16
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 241.1 ms
+
+  ≡ƒö┤ LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : B10-10, B10-12, B10-13, B10-14, B10-15, B10-16
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Tamper localized in 46 block(s): B10-10, B10-12, B10-13, B10-14, B10-15, B10-16, B11-9, B11-10, B11-11, B11-12
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  STAGE 5 ΓÇö Verifying: tampered_jpeg
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Note: redistribution ΓåÆ honest: may PASS
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_jpeg.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:14:06
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : FAIL
+Watermark Text    : Not recovered
+Watermark Score   : 0.0
+Current Holder    : Unknown
+Copy Version      : Unknown
+Registry Check    : PASS
+Tamper Localization: B0-0, B0-2, B0-4, B0-6, B0-7, B0-8, B0-9, B0-12, B0-13, B0-15 (53.74% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Watermark missing or altered; Tamper localized in 776 block(s): B0-0, B0-2, B0-4, B0-6, B0-7, B0-8, B0-9, B0-12, B0-13, B0-15
+==========================================================
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+SECURE DOCUMENT MONITOR
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Unknown
+COPY VERSION      : Unknown
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : INVALID
+TAMPER            : B0-0, B0-2, B0-4, B0-6, B0-7, B0-8
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 7535.7 ms
+
+  ≡ƒö┤ LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : B0-0, B0-2, B0-4, B0-6, B0-7, B0-8
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Watermark missing or altered
+     Issue         : Tamper localized in 776 block(s): B0-0, B0-2, B0-4, B0-6, B0-7, B0-8, B0-9, B0-12, B0-13, B0-15
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  STAGE 5 ΓÇö Verifying: tampered_crop
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Note: redistribution ΓåÆ honest: geometry mismatch
+
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\tampered\tampered_crop.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:14:34
+Hash Check        : FAIL
+Signature Check   : FAIL
+Watermark Check   : FAIL
+Watermark Text    : Not recovered
+Watermark Score   : 0.0
+Current Holder    : Unknown
+Copy Version      : Unknown
+Registry Check    : PASS
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : SUSPICIOUS / TAMPERED
+Issues            : Protected hash mismatch; Digital signature invalid; Watermark missing or altered
+==========================================================
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+SECURE DOCUMENT MONITOR
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+DOCUMENT ID       : DOC-2026-001
+STATUS            : TAMPERED
+CURRENT HOLDER    : Unknown
+COPY VERSION      : Unknown
+TRANSFER COUNT    : 3
+HASH CHECK        : FAIL
+SIGNATURE         : FAIL
+WATERMARK         : INVALID
+TAMPER            : NONE DETECTED
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[pi-terminal] Verdict           : SUSPICIOUS / TAMPERED
+[pi-terminal] Verification time : 27815.6 ms
+
+  ≡ƒö┤ LED  |  Verdict: SUSPICIOUS / TAMPERED
+     Tamper blocks : N/A
+     Issue         : Protected hash mismatch
+     Issue         : Digital signature invalid
+     Issue         : Watermark missing or altered
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  DEMO COMPLETE ΓÇö Summary
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+  Variant              Verdict      LED                           
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+  authentic copy       AUTHENTIC    GREEN Γ£ô
+  tampered_patch       SUSPICIOUS / TAMPERED RED  |  blocks: B16-17, B16-18, B16-19, B16-20, B17-17, B17-18
+  tampered_text        SUSPICIOUS / TAMPERED RED  |  blocks: B10-10, B10-12, B10-13, B10-14, B10-15, B10-16
+  tampered_jpeg        SUSPICIOUS / TAMPERED RED  |  blocks: B0-0, B0-2, B0-4, B0-6, B0-7, B0-8
+  tampered_crop        SUSPICIOUS / TAMPERED RED  |  blocks: geometry mismatch
+  ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+  Expected behaviour:
+    tampered_patch  ΓåÆ RED  (painted patch ΓÇö deliberate localised edit)
+    tampered_text   ΓåÆ RED  (text overlay   ΓÇö deliberate localised edit)
+    tampered_jpeg   ΓåÆ may be GREEN or RED  (redistribution, not edit)
+    tampered_crop   ΓåÆ RED  (geometry change ΓÇö hash + sig both fail)
+
+  Photograph for report:
+    ΓÇó Green LED lit during authentic-copy verification
+    ΓÇó Red LED lit during tampered_patch or tampered_text verification
+    ΓÇó Terminal output showing traversal path for the authentic copy
+    ΓÇó Terminal output showing tamper block labels for patch/text variants
+

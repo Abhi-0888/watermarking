@@ -1,0 +1,40 @@
+﻿
+==========================================================
+DOCUMENT VERIFICATION REPORT (ONLINE MODE)
+==========================================================
+File              : D:\SrmAP\Fullstack\SecureDocSystem\samples\watermarked.png
+Document ID       : DOC-2026-001
+Checked At        : 2026-09-28 16:12:31
+Hash Check        : PASS
+Signature Check   : PASS
+Watermark Check   : PASS
+Watermark Text    : ISS:CollegeXYZ|SRC:CollegeXYZ|RCV:Abhishek|DOC:DOC-2026-001|VER:1|TS:2026-09-28 16:09:15
+Watermark Score   : 0.991
+Current Holder    : Abhishek
+Copy Version      : 1
+Registry Check    : PASS
+Tamper Localization: None (0.0% of blocks)
+Provenance Chain  : VALID
+Traversal Path    : CollegeXYZ -> Abhishek -> Rahul -> Priya
+Verdict           : AUTHENTIC
+==========================================================
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+SECURE DOCUMENT MONITOR
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+DOCUMENT ID       : DOC-2026-001
+STATUS            : AUTHENTIC
+CURRENT HOLDER    : Abhishek
+COPY VERSION      : 1
+TRANSFER COUNT    : 3
+HASH CHECK        : PASS
+SIGNATURE         : PASS
+WATERMARK         : VALID
+TAMPER            : NONE DETECTED
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+TRAVERSAL PATH:
+  CollegeXYZ -> Abhishek -> Rahul -> Priya
+ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[pi-terminal] Verdict           : AUTHENTIC
+[pi-terminal] Verification time : 427.3 ms

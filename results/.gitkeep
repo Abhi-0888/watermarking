@@ -1,0 +1,2 @@
+# This directory holds benchmark CSVs and overlay images generated at runtime.
+# The directory itself is tracked; generated files are .gitignore'd.
