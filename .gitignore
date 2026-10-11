@@ -1,35 +1,55 @@
-# Python
+# ── Python cache ──────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
+*.pyd
+
+# ── Virtual environments ───────────────────────────────────────────────────────
 venv/
 .venv/
 env/
 
-# Generated sample outputs (recreated by main.py / transfer.py)
+# ── Vendor (deployment-only; not needed in repo) ──────────────────────────────
+vendor/
+
+# ── Generated sample outputs (recreated by main.py / transfer.py / scripts) ───
 samples/encrypted.bin
+samples/encrypted2.bin
 samples/decrypted.png
+samples/decrypted2.png
 samples/watermarked.png
 samples/watermarked_v*.png
+samples/watermarked2.png
+samples/watermarked2_v*.png
 samples/manifest.json
 samples/manifest_v*.json
+samples/manifest2.json
+samples/manifest2_v*.json
 samples/registry.json
+samples/registry2.json
 samples/provenance.json
+samples/provenance2.json
 samples/attacks/
 samples/keys/
+samples/keys2/
+samples/tampered/
+samples/tampered2/
 
-# IDE / OS
+# ── Results / logs (generated at runtime) ─────────────────────────────────────
+results/*.csv
+results/*.txt
+results/*.png
+# Keep the .gitkeep so the folder itself is tracked
+!results/.gitkeep
+
+# ── IDE / OS ───────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
 Thumbs.db
 .DS_Store
 
-# Benchmark results and tamper test outputs (generated at runtime)
-results/*.csv
-samples/tampered/
-
-# Archives / temp / converted sources
+# ── Archives / temp ───────────────────────────────────────────────────────────
 temp_zip_extract/
 *.zip
 *.docx
